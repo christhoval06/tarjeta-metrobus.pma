@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tarjeta-metrobus-pma"
+version = "0.1.0"
+description = ""
+authors = ["Christhoval Barba <christhoval@dev>"]
+readme = "README.md"
+packages = [{include = "tarjeta_metrobus"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+beautifulsoup4 = "^4.12.3"
+flask = "^3.0.3"
+python-slugify = "^8.0.4"
+requests = "^2.32.2"
+stringcase = "^1.2.0"
+pytz = "^2024.1"
+pandas = "^2.2.2"
+dataclasses-json = "^0.6.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
