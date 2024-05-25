@@ -61,6 +61,8 @@ session = get_session()
 
 # https://json2pyi.pages.dev/#Dataclass
 
+# https://github.com/qzxtu/Metro-Consulta/blob/main/js/main.js
+
 
 @dataclass
 class ComercialesParams(DataClassJsonMixin):
@@ -220,7 +222,7 @@ def get_card_info(card_number: str, only_ksi: bool = False) -> Union[KSI, CardIn
     }
 
     url = f'{URL}/{Services.SESSION.value}'
-    print(url)
+    
     res = session.request("GET", url, params=params, timeout=15)
 
     soup = BeautifulSoup(res.text, "html.parser")
