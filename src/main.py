@@ -15,6 +15,7 @@ def main():
     '''
     Run the API
     '''
+    print('PORT', os.environ.get('PORT', 80))
     app.run(port=int(os.environ.get('PORT', 80)), debug=True)
 
 
